@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import font awesome -->
+    <script src="https://kit.fontawesome.com/65cbc96a64.js" crossorigin="anonymous"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        header {
+            background: url(img/orang3.jpg!d);
+            background-size: cover;
+            background-position: center;
+            min-height: 900px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #00476B;
+        }
+    </style>
+    <title>Materialize Courses</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Joni</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small black darken-4"
+                            data-tooltip="This is instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small black darken-4"
+                            data-tooltip="This is facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small black darken-4"
+                            data-tooltip="This is twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                </ul>
+
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End Navbar -->
+
+    <!-- Photo/Grid -->
+
+    <section class="container section" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/potrait.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="light-blue-text text-darken-4">Potrait</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, temporibus porro. Odit quidem
+                    reiciendis corporis inventore impedit molestiae?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="img/city.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h2 class="light-blue-text text-darken-4">City</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, temporibus porro. Odit quidem
+                    reiciendis corporis inventore impedit molestiae?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/nature3.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="light-blue-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, temporibus porro. Odit quidem
+                    reiciendis corporis inventore impedit molestiae?</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Photo/Grid -->
+
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/nature2.jpg" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- End Parallax -->
+
+
+    <!-- Services / Tabs -->
+
+    <section class="section container" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="light-blue-text text-darken-4">What i do...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia culpa nam iusto aperiam quidem
+                    amet necessitatibus unde eum ipsam eos totam animi, sint quasi. Vel facere ad autem veniam. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia culpa nam iusto aperiam
+                    quidem amet necessitatibus unde eum ipsam eos totam animi, sint quasi. Vel facere ad autem veniam.
+                </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="active light-blue-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="light-blue-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div id="photography" class="col s12">
+                    <p class="flow-text light-blue-text text-darken-4">Photography</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia culpa nam iusto aperiam
+                        quidem amet necessitatibus unde eum ipsam eos totam animi, sint quasi. Vel facere ad autem
+                        veniam.
+                    </p>
+                </div>
+                <div id="editing" class="col s12">
+                    <p class="flow-text light-blue-text text-darken-4">Editing</p>
+                    <p>Aku suka edit video dan photo
+                        Aku suka edit video dan photo
+                        Aku suka edit video dan photo
+                        Aku suka edit video dan photo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service / Tabs -->
+
+    <!-- Parallax -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/nature.jpg" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- End Parallax -->
+
+    <!-- Contact Form -->
+    <section class="section container" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="light-blue-text text-darken-4">Get in touch</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem ut, tempore voluptate
+                    id nemo veritatis ullam voluptates fuga</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem ut, tempore
+                    voluptate
+                    id nemo veritatis ullam voluptates fuga</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis exercitationem ut, tempore
+                    voluptate
+                    id nemo veritatis ullam voluptates fuga</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea class="materialize-textarea" id="message" cols="20" rows="20"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Pilih tanggal anda membutuhkan saya</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Service Required</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore quos sint earum mollitia
+                        accusamus consequatur saepe dolor expedita vitae, similique laborum itaque voluptas
+                        necessitatibus quod iure voluptates dolores reprehenderit!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore quos sint earum
+                        mollitia
+                        accusamus consequatur saepe dolor expedita vitae, similique laborum itaque voluptas
+                        necessitatibus quod iure voluptates dolores reprehenderit!</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <li><a href="#" class="grey-text text-lighten-3">Facebok</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Linkedin</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2022 Photo Joni</div>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy()
+        });
+    </script>
+</body>
+
+</html>
